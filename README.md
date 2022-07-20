@@ -90,7 +90,7 @@ cordova.plugins.fileOpener2.open(
 );
 ```
 
-__Note on Electron:__ Do not forget to enable Node.js in your app by adding `"nodeIntegration": true` to `platforms/electron/platform_www/cdv-electron-settings.json` file, See [Cordova-Electron documentation](https://cordova.apache.org/docs/en/latest/guide/platforms/electron/index.html#customizing-the-application's-window-options).
+__Note on Electron:__ The previous version of FileOpener2 required "nodeIntegration": true to be set, see [Cordova-Electron documentation](https://cordova.apache.org/docs/en/latest/guide/platforms/electron/index.html#customizing-the-application's-window-options). With Cordova 9+ and Electron Platform 3.0.0 the context bridge uses secure Node.js execution and requires no changes to settings to execute Node.js code. This version of FileOpener2 uses the context bridge for plugins and requires no additional configuration changes on Electron PLatform 3+.
 
 ### Market place installation
 Install From Market: to install an APK from a market place, such as Google Play or the App Store, you can use an `<a>` tag in combination with the `market://` protocol:
