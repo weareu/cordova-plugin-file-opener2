@@ -1,5 +1,6 @@
 {
     "name": "cordova-plugin-file-opener2",
+    "main": "./FileOpener2.js",
     "cordova": {
         "id": "cordova-plugin-file-opener2",
         "serviceName": "FileOpener2"

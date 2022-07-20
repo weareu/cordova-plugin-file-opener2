@@ -89,7 +89,7 @@
 
     <!-- electron -->
     <platform name="electron">
-       <framework src="./src/electron"/>
+       <framework src="./src/electron/" />
     </platform>
 
 </plugin>
