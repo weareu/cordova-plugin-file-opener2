@@ -1,0 +1,10 @@
+{
+    "name": "cordova-plugin-file-opener2",
+    "cordova": {
+        "id": "cordova-plugin-file-opener2",
+        "serviceName": "NativeSupportPlugin"
+    },
+    "dependencies": {
+        
+    }
+}
