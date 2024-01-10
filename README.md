@@ -1,3 +1,11 @@
+ ⛔️  NO LONGER MAINTAINED ⛔️ 
+
+This plugin was originally built back in 2013 to provide an easy way to open files in Cordova applications. Since 2018 the plugin has not been actively maintained, with only the occaisional release to support updates from the community. Due to signficant changes in the way that Android handles permissions from version 11 onwards, this plugin does not work with Android 11 or later and would require significant changes to make this happen. 
+
+If someone would like to take on this work and maintain the plugin moving forward please get in touch.
+
+----------
+
 # A File Opener Plugin for Cordova
 
 [![Latest Stable Version](https://img.shields.io/npm/v/cordova-plugin-file-opener2.svg)](https://www.npmjs.com/package/cordova-plugin-file-opener2) [![Total Downloads](https://img.shields.io/npm/dt/cordova-plugin-file-opener2.svg)](https://npm-stat.com/charts.html?package=cordova-plugin-file-opener2)
@@ -21,36 +29,20 @@ cordova.plugins.fileOpener2.open(
 $ cordova plugin add cordova-plugin-file-opener2
 ```
 
-### Optional variables
-
-This plugin requires the Android support library v4. From release `2.1.0` the version of this can be set at installation. The minimum version is `24.1.0`. Default value is `27.+`. [Check out the latest version](https://developer.android.com/topic/libraries/support-library/revisions.html).
-
-```shell
-$ cordova plugin add cordova-plugin-file-opener2  --variable ANDROID_SUPPORT_V4_VERSION="27.+"
-```
-
-If you are using the `cordova-android-support-gradle-release` plugin it should match the value you have set there.
-
 ## Requirements
 
 The following platforms and versions are supported by the latest release:
 
-- Android 4.4+ / iOS 9+ / Windows / Electron
+- Android 5.1+ / iOS 9+ / Windows / Electron
 - Cordova CLI 7.0 or higher
 
 Cordova CLI 6.0 is supported by 2.0.19, but there are a number of issues, particularly with Android builds (see [232](https://github.com/pwlin/cordova-plugin-file-opener2/issues/232) [203](https://github.com/pwlin/cordova-plugin-file-opener2/issues/203) [207](https://github.com/pwlin/cordova-plugin-file-opener2/issues/207)). Using the [cordova-android-support-gradle-release](https://github.com/dpa99c/cordova-android-support-gradle-release) plugin may help.
 
-### AndroidX Support
+### Support for Android 11 and later 
+There have been [reports](https://github.com/pwlin/cordova-plugin-file-opener2/issues/310) of issues using this plugin with Android 11 and later. 
 
-Currently if your project requires AndroidX support, you need to add the following two plugins to your project:
-
-- [cordova-plugin-androidx](https://github.com/dpa99c/cordova-plugin-androidx/) and [cordova-plugin-androidx-adapter](https://github.com/dpa99c/cordova-plugin-androidx-adapter/)
-```shell
-$ cordova plugin add cordova-plugin-androidx
-$ cordova plugin add cordova-plugin-androidx-adapter
-```
-Just adding these plugins should be enough and no further changes are necessary.
-
+### Edit support 
+The plugin currently does *not* support the editing of files on Android. It may support editing on iOS, but this has not been tested. 
 
 ## fileOpener2.open(filePath, mimeType, options)
 
@@ -58,7 +50,7 @@ Opens a file
 
 ### Supported Platforms
 
-- Android 4.4+
+- Android 5.1+
 - iOS 9+
 - Windows
 - Electron
@@ -111,7 +103,7 @@ Opens with system modal to open file with an already installed app.
 
 ### Supported Platforms
 
-- Android 4.4+
+- Android 5.1+
 - iOS 9+
 
 ### Quick Example
@@ -141,7 +133,7 @@ __Note__: You need to add `<uses-permission android:name="android.permission.REQ
 
 ### Supported Platforms
 
-- Android 4.4+
+- Android 5.1+
 
 ### Quick Example
 ```js
@@ -161,7 +153,7 @@ Check if an app is already installed.
 
 ### Supported Platforms
 
-- Android 4.4+
+- Android 5.1+
 
 ### Quick Example
 ```javascript
